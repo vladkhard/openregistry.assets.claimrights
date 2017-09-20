@@ -7,13 +7,13 @@ from openregistry.assets.core.tests.blanks.mixins import AssetResourceTestMixin
 
 from openregistry.assets.claimrights.models import Asset as AssetClaimRights
 from openregistry.assets.claimrights.tests.base import (
-    test_asset_claimRights_data, BaseAssetWebTest
+    test_asset_claimrights_data, BaseAssetWebTest
 )
 
 
 class AssetClaimRightsResourceTest(BaseAssetWebTest, ResourceTestMixin, AssetResourceTestMixin):
     asset_model = AssetClaimRights
-    initial_data = test_asset_claimRights_data
+    initial_data = test_asset_claimrights_data
     initial_status = 'pending'
 
 
