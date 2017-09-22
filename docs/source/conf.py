@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'openregistry.assets.basic'
+project = u'openregistry.assets.claimrights'
 copyright = u'2017, Quintagroup, Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
