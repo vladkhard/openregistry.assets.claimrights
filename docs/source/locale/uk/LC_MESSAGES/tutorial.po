@@ -101,32 +101,144 @@ msgstr ""
 msgid "Let's check what asset registry contains:"
 msgstr "Перевіримо, що містить реєстр активів:"
 
-msgid "And indeed we have 2 assets now."
-msgstr "Дійсно, в нас зараз є два активи."
-
-msgid "Modifying Asset"
-msgstr "Модифікація активу"
-
-msgid "Let's update asset description:"
-msgstr "Оновимо актив шляхом надання йому усіх інших важливих властивостей:"
-
-msgid ""
-"We see the added properies have merged with existing asset data. "
-"Additionally, the `dateModified` property was updated to reflect the last "
-"modification datestamp."
-msgstr ""
-"Ми бачимо, що додаткові властивості об’єднані з існуючими даними активу. "
-"Додатково оновлена властивість dateModified, щоб відображати останню дату "
-"модифікації."
-
 msgid "Checking the listing again reflects the new modification date:"
 msgstr "Ще одна перевірка списку відображає нову дату модифікації:"
 
-msgid "Deleting Asset"
-msgstr "Видалення активу"
-
-msgid "Let's delete asset:"
-msgstr "Видалимо актив"
-
 msgid "Integration with lots"
 msgstr "Інтеграція з лотами"
+
+msgid "Let's try exploring the `claimRights` endpoint:"
+msgstr "Подивимось як працює точка входу `claimRights`:"
+
+msgid "Now let's attempt creating some claimRights:"
+msgstr "Спробуймо створити нове право вимоги:"
+
+msgid "Let's create claim right with the minimal (only required) data set:"
+msgstr "Створимо claim right з мінімально допустимим набором даних "
+"(тільки параметри, обовязкові для заповнення): "
+
+msgid ""
+"Success! Now we can see that new object was created. Response code is `201` "
+"and `Location` response header reports the location of the created object.  "
+"The body of response reveals the information about the created claim right: "
+"its internal `id` (that matches the `Location` segment), its official "
+"`assetID` and `dateModified` datestamp stating the moment in time when it "
+"was last modified. Pay attention to the `assetType`. Note that the object is"
+" created with `pending` status."
+msgstr "Успіх! Тепер ми бачимо, що новий об’єкт було створено. Код відповіді "
+"201 та заголовок відповіді Location вказує місцерозташування створеного "
+"об’єкта. Тіло відповіді показує інформацію про створене право вимоги, його внутрішній "
+"id (яке співпадає з сегментом Location), його офіційний assetID та dateModified "
+"(дату, що показує час, коли право вимоги востаннє модифікувалося). Зверніть увагу на "
+"assetType, а також на те, що право вимоги створюється зі статусом pending."
+
+msgid "Let's see what listing of claim rights reveals us:"
+msgstr "Подивимось, що показує список прав вимоги:"
+
+msgid ""
+"We do see the internal `id` of the claim right and its `dateModified` "
+"datestamp."
+msgstr "Ми бачимо внутрішнє id права вимоги та його dateModified дату."
+
+msgid ""
+"The previous claim right contained only required fields. Let's try creating "
+"another one with more data (status `created`):"
+msgstr "Попереднє право вимоги було створене лише з обов’язковими полями. Тепер "
+"додамо право вимоги з максимально допустимим набором даних при створенні "
+"(право вимоги повинне бути у статусі created)."
+
+msgid "And indeed we have 2 objects now."
+msgstr "Дійсно, в нас зараз є два активи."
+
+msgid "Modifying Claim Right"
+msgstr "Модифікація права вимоги"
+
+msgid "Let's update claim right description:"
+msgstr "Оновимо право вимоги шляхом надання йому усіх інших важливих властивостей:"
+
+msgid ""
+"We see the added properies have merged with existing data. Additionally, the"
+" `dateModified` property was updated to reflect the last modification "
+"datestamp."
+msgstr "Ми бачимо, що додаткові властивості об’єднані з існуючими даними права вимоги. "
+"Додатково оновлена властивість `dateModified`, щоб відображати останню дату модифікації."
+
+msgid "Deleting Claim Right"
+msgstr "Видалення права вимоги"
+
+msgid "Let's delete it:"
+msgstr "Видалимо право вимоги"
+
+#~ msgid "Let's try exploring the `/assets` endpoint:"
+#~ msgstr "Подивимось як працює точка входу `/assets`:"
+
+#~ msgid "Now let's attempt creating some asset:"
+#~ msgstr "Спробуймо створити новий актив"
+
+#~ msgid "Let's create asset with the minimal (only required) data set:"
+#~ msgstr ""
+#~ "Створимо asset з мінімально допустимим набором даних (тільки параметри "
+#~ "обовязкові для заповнення) "
+
+#~ msgid ""
+#~ "Success! Now we can see that new object was created. Response code is `201` "
+#~ "and `Location` response header reports the location of the created object.  "
+#~ "The body of response reveals the information about the created asset: its "
+#~ "internal `id` (that matches the `Location` segment), its official `assetID` "
+#~ "and `dateModified` datestamp stating the moment in time when asset was last "
+#~ "modified. Pay attention to the `assetType`. Note that asset is created with "
+#~ "`pending` status."
+#~ msgstr ""
+#~ "Успіх! Тепер ми бачимо, що новий об’єкт було створено. Код відповіді `201` "
+#~ "та заголовок відповіді `Location` вказує місцерозташування створеного "
+#~ "об’єкта. Тіло відповіді показує інформацію про створений актив, його "
+#~ "внутрішній `id` (яке співпадає з сегментом `Location`), його офіційний "
+#~ "`assetID` та `dateModified` (дату, що показує час, коли актив востаннє "
+#~ "модифікувався). Зверніть увагу на `assetType`, а також на те, що актив "
+#~ "створюється зі статусом `pending`."
+
+#~ msgid "Let's see what listing of assets reveals us:"
+#~ msgstr "Подивимось, що показує список активів:"
+
+#~ msgid ""
+#~ "We do see the internal `id` of a asset (that can be used to construct full "
+#~ "URL by prepending `http://lb.api-"
+#~ "sandbox.registry.openprocurement.net/api/0/assets/`) and its `dateModified` "
+#~ "datestamp."
+#~ msgstr ""
+#~ "Ми бачимо внутрішнє `id` активу (що може бути використано для побудови "
+#~ "повної URL-адреси, якщо додати `http://lb.api-"
+#~ "sandbox.registry.openprocurement.net/api/0/assets/`) та його dateModified "
+#~ "дату."
+
+#~ msgid ""
+#~ "The previous asset contained only required fields. Let's try creating asset "
+#~ "with more data (asset has status `created`):"
+#~ msgstr ""
+#~ "Попередній актив був створений лише з обов’язковими полями. Тепер додамо "
+#~ "актив з максимально допустимим набором даних при створенні (актив повинен "
+#~ "бути у статусі `created`)."
+
+#~ msgid "And indeed we have 2 assets now."
+#~ msgstr "Дійсно, в нас зараз є два активи."
+
+#~ msgid "Modifying Asset"
+#~ msgstr "Модифікація активу"
+
+#~ msgid "Let's update asset description:"
+#~ msgstr "Оновимо актив шляхом надання йому усіх інших важливих властивостей:"
+
+#~ msgid ""
+#~ "We see the added properies have merged with existing asset data. "
+#~ "Additionally, the `dateModified` property was updated to reflect the last "
+#~ "modification datestamp."
+#~ msgstr ""
+#~ "Ми бачимо, що додаткові властивості об’єднані з існуючими даними активу. "
+#~ "Додатково оновлена властивість dateModified, щоб відображати останню дату "
+#~ "модифікації."
+
+#~ msgid "Deleting Asset"
+#~ msgstr "Видалення активу"
+
+#~ msgid "Let's delete asset:"
+#~ msgstr "Видалимо актив"
