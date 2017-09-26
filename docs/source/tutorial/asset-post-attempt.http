@@ -4,11 +4,9 @@ Content-Length: 4
 Content-Type: application/x-www-form-urlencoded
 Host: lb.api-sandbox.registry.ea.openprocurement.net
 
-
-415 Unsupported Media Type
+Response: 415 Unsupported Media Type
 Content-Type: application/json
 X-Content-Type-Options: nosniff
-
 {
   "status": "error", 
   "errors": [

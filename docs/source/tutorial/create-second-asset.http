@@ -1,24 +1,80 @@
 POST /api/0.1/assets?opt_pretty=1 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
-Content-Length: 1516
+Content-Length: 3673
 Content-Type: application/json
 Host: lb.api-sandbox.registry.ea.openprocurement.net
-
+DATA:
 {
   "data": {
-    "assetType": "basic", 
+    "assetType": "claimRights", 
     "classification": {
-      "scheme": "CAV",
-      "id": "39513200-3",
+      "scheme": "CAV", 
+      "id": "39513200-3", 
       "description": "Земельні ділянки"
     }, 
     "title": "Земля для космодрому", 
+    "items": [
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "CAV", 
+          "id": "39513200-3", 
+          "description": "Cartons"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "address": {
+          "countryName": "Україна", 
+          "postalCode": "79000", 
+          "region": "м. Київ", 
+          "streetAddress": "вул. Банкова 1", 
+          "locality": "м. Київ"
+        }, 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5
+      }, 
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "CAV", 
+          "id": "39513200-3", 
+          "description": "Cartons"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "address": {
+          "countryName": "Україна", 
+          "postalCode": "79000", 
+          "region": "м. Київ", 
+          "streetAddress": "вул. Банкова 1", 
+          "locality": "м. Київ"
+        }, 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5
+      }
+    ], 
     "value": {
       "currency": "UAH", 
       "amount": 100
     }, 
     "unit": {
-      "code": "39513200-3",
+      "code": "39513200-3", 
       "name": "item"
     }, 
     "address": {
@@ -27,6 +83,19 @@ Host: lb.api-sandbox.registry.ea.openprocurement.net
       "region": "м. Київ", 
       "streetAddress": "вул. Банкова 1", 
       "locality": "м. Київ"
+    }, 
+    "debt": {
+      "agreementNumber": "42", 
+      "debtCurrencyValue": {
+        "currency": "USD", 
+        "amount": 100
+      }, 
+      "value": {
+        "currency": "UAH", 
+        "amount": 1
+      }, 
+      "dateSigned": "2017-08-16T12:30:17.615196+03:00", 
+      "debtorType": "legalPerson"
     }, 
     "assetCustodian": {
       "contactPoint": {
@@ -51,32 +120,88 @@ Host: lb.api-sandbox.registry.ea.openprocurement.net
   }
 }
 
-
-201 Created
+Response: 201 Created
 Content-Type: application/json
-Location: http://lb.api-sandbox.registry.ea.openprocurement.net/api/0.1/assets/bb2d3063c01346cb8a7f9f747dbd02b6
+Location: http://lb.api-sandbox.registry.ea.openprocurement.net/api/0.1/assets/75b11ba80dc74164ab8862e243874933
 X-Content-Type-Options: nosniff
-
 {
   "access": {
-    "token": "a14cec8e4d3f4888a27f31fb0b54ee25"
+    "token": "1fce0707515b423681f82f9d639baa0c"
   }, 
   "data": {
     "status": "draft", 
-    "assetType": "basic", 
+    "assetType": "claimRights", 
     "classification": {
-      "scheme": "CAV",
+      "scheme": "CAV", 
       "description": "Земельні ділянки", 
       "id": "39513200-3"
     }, 
     "title": "Земля для космодрому", 
-    "assetID": "UA-2017-08-16-000002", 
+    "assetID": "UA-AR-DGF-2017-09-26-000002", 
+    "items": [
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "CAV", 
+          "description": "Cartons", 
+          "id": "39513200-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "address": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "7e64a2e3a3e1476c8d7dc6cdcd511057", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5
+      }, 
+      {
+        "description": "футляри до державних нагород", 
+        "classification": {
+          "scheme": "CAV", 
+          "description": "Cartons", 
+          "id": "39513200-3"
+        }, 
+        "additionalClassifications": [
+          {
+            "scheme": "ДКПП", 
+            "id": "17.21.1", 
+            "description": "папір і картон гофровані, паперова й картонна тара"
+          }
+        ], 
+        "address": {
+          "postalCode": "79000", 
+          "countryName": "Україна", 
+          "streetAddress": "вул. Банкова 1", 
+          "region": "м. Київ", 
+          "locality": "м. Київ"
+        }, 
+        "id": "d9536444955541f0ac7693bc647bb11b", 
+        "unit": {
+          "code": "44617100-9", 
+          "name": "item"
+        }, 
+        "quantity": 5
+      }
+    ], 
     "value": {
       "currency": "UAH", 
       "amount": 100.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2017-08-16T18:36:14.032506+03:00", 
+    "dateModified": "2017-09-26T11:39:12.527629+03:00", 
     "owner": "broker", 
     "assetCustodian": {
       "contactPoint": {
@@ -104,10 +229,23 @@ X-Content-Type-Options: nosniff
       "region": "м. Київ", 
       "locality": "м. Київ"
     }, 
-    "date": "2017-08-16T18:36:14.030468+03:00", 
-    "id": "bb2d3063c01346cb8a7f9f747dbd02b6", 
+    "date": "2017-09-26T11:39:12.522965+03:00", 
+    "debt": {
+      "agreementNumber": "42", 
+      "debtCurrencyValue": {
+        "currency": "USD", 
+        "amount": 100.0
+      }, 
+      "dateSigned": "2017-08-16T12:30:17.615196+03:00", 
+      "value": {
+        "currency": "UAH", 
+        "amount": 1.0
+      }, 
+      "debtorType": "legalPerson"
+    }, 
+    "id": "75b11ba80dc74164ab8862e243874933", 
     "unit": {
-      "code": "39513200-3",
+      "code": "39513200-3", 
       "name": "item"
     }, 
     "quantity": 5

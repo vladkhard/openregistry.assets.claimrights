@@ -8,12 +8,12 @@ from openregistry.assets.claimrights.tests.base import BaseAssetWebTest
 class AssetResourceTest(BaseAssetWebTest):
 
     def setUp(self):
+        super(AssetResourceTest, self).setUp()
         self.app = DumpsTestAppwebtest(
             "config:tests.ini", relative_to=self.relative_to)
         self.app.RequestClass = PrefixedRequestClass
         self.app.authorization = ('Basic', ('broker', ''))
-        self.couchdb_server = self.app.app.registry.couchdb_server
-        self.db = self.app.app.registry.db
+
 
     def test_docs_tutorial(self):
         request_path = '/?opt_pretty=1'
