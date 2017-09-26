@@ -1,11 +1,11 @@
 .. . Kicking page rebuild 2014-10-30 17:00:08
 .. include:: defs.hrst
 
-.. index:: basic asset, Parameter, Classification, Unit, Value
+.. index:: claim right, Parameter, Classification, Unit, Value
 
-.. _basic asset:
+.. _claim right:
 
-Basic Asset
+Claim Right
 ==================================================================================
 
 Schema
@@ -17,7 +17,7 @@ Schema
 :assetID:
    string, auto-generated, read-only
 
-   The asset identifier to refer it to in the `paper` documentation. 
+   The claim right identifier to refer it to in the `paper` documentation. 
 
    |ocdsDescription|
    AssetID is included to make the flattened data structure more convenient.
@@ -25,13 +25,13 @@ Schema
 :date:
     string, auto-generated, read-only
     
-    The date of asset creation/undoing.
+    The date of claim right creation/undoing.
     
 :dateModified:    
     string, auto-generated, read-only
     
     |ocdsDescription|
-    Date when the asset was last modified.
+    Date when claim right was last modified.
     
 :mode:
     optional
@@ -41,12 +41,12 @@ Schema
 :status:
     string, required
     
-    The asset status within the Registry.
+    The claim right status within the Registry.
     
 :value:
     :ref:`Value`, required 
     
-    Estimated asset value.
+    Estimated value of the claim right.
     
 :relatedLot:
     string, required in `active` status
@@ -56,7 +56,7 @@ Schema
 :assetType:
     string, required
 
-    Type of the given asset.
+    Type of the given claim right.
 
 :title:
     string, multilingual
@@ -89,12 +89,12 @@ Schema
 :assetCustodian:
    :ref:`Organization`, required
 
-   The entity managing the asset.
+   The entity managing current claim right.
     
 :classification:
     :ref:`Classification`, required
 
-    The primary classification for the asset.
+    The primary classification for claim right.
 
     It is required for `classification.scheme` to be `CAV`. The
     `classification.id` should be valid CAV code.
@@ -134,6 +134,15 @@ Schema
         string, required
     :elevation:
         string, optional, usually not used
+
+:items:
+    string, required
+
+    List of assets specified within the claim right.
+
+
+:debt:
+    :ref:`Debt`, optional
         
 
 .. _Classification:
@@ -213,3 +222,4 @@ Schema
     
 :valueAddedTaxIncluded:
     bool, required
+
