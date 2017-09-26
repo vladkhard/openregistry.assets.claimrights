@@ -1,7 +1,7 @@
-.. _assets_workflow: 
+.. _claimRights Workflow: 
 
-Assets Workflow
-==============
+claimRights Workflow
+====================
 
 .. graphviz::
 

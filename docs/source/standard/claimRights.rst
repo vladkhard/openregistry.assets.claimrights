@@ -1,12 +1,12 @@
 .. . Kicking page rebuild 2014-10-30 17:00:08
 .. include:: defs.hrst
 
-.. index:: claim right, Parameter, Classification, Unit, Value
+.. index:: claim right, Parameter, Classification, Unit, Value, claimRights Workflow, Item
 
 .. _claim right:
 
 Claim Right
-==================================================================================
+===========
 
 Schema
 ------
@@ -39,7 +39,7 @@ Schema
     The additional parameter with a value ``test``.
     
 :status:
-    string, required
+    string, required, :ref:`claimRights Workflow`
     
     The claim right status within the Registry.
     
@@ -56,7 +56,7 @@ Schema
 :assetType:
     string, required
 
-    Type of the given claim right.
+    The assetType to be used here is `claimRights`.
 
 :title:
     string, multilingual
@@ -136,8 +136,8 @@ Schema
         string, optional, usually not used
 
 :items:
-    string, required
-
+    :ref:`Item`
+    
     List of assets specified within the claim right.
 
 

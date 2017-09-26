@@ -63,12 +63,7 @@ Schema
 :documentOf:
     string
 
-    Possible values are:
-
-    * `asset`
-    * `lot`
-
 :relatedItem:
     string
 
-    Id of related :ref:`lot` or :ref:`item`.
+    Id of related Lot or :ref:`item`.
