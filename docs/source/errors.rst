@@ -65,10 +65,8 @@ objects.
 
 Example Success Response
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Here is a response that describes asset
+Here is a response that describes ....
 
-.. literalinclude:: tutorial/create-second-asset.http
-   :language: javascript
 
 
 Error Response
@@ -102,6 +100,3 @@ described below:
 Example Error Response
 ~~~~~~~~~~~~~~~~~~~~~~
 Sample below indicates incomplete request.
-
-.. literalinclude:: tutorial/asset-post-attempt.http
-   :language: javascript

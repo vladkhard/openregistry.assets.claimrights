@@ -1,15 +1,12 @@
 Overview
 ========
 
-openregistry.assets.basic contains the description of the Registry Data Base.
+openregistry.assets.claimrights contains the description of the Registry Data Base.
 
 Features
 --------
-
-* Basic asset is a representation of an item.
-* Procedure can be switched from *draft* status to *pending*.
-* Basic assets are combined in lot, being marked as attached to that lot.
-* The only currency (*Value.currency*) to be used is hryvnia (UAH).
+* claimRights state for the indebtedness to banks which represent credit obligations.
+* Specific structures which are `items` & `debt` are included.
 
 Conventions
 -----------
