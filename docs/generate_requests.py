@@ -14,7 +14,6 @@ class AssetResourceTest(BaseAssetWebTest):
         self.app.RequestClass = PrefixedRequestClass
         self.app.authorization = ('Basic', ('broker', ''))
 
-
     def test_docs_tutorial(self):
         request_path = '/?opt_pretty=1'
 
@@ -28,7 +27,6 @@ class AssetResourceTest(BaseAssetWebTest):
         with open('docs/source/tutorial/asset-post-attempt.http', 'w') as self.app.file_obj:
             response = self.app.post(request_path, 'data', status=415)
             self.assertEqual(response.status, '415 Unsupported Media Type')
-
 
         with open('docs/source/tutorial/asset-post-attempt-json.http', 'w') as self.app.file_obj:
             response = self.app.post(
@@ -51,7 +49,6 @@ class AssetResourceTest(BaseAssetWebTest):
                                            {'data': {"status": 'pending'}})
             self.assertEqual(response.status, '200 OK')
 
-
         with open('docs/source/tutorial/blank-asset-view.http', 'w') as self.app.file_obj:
             response = self.app.get('/{}'.format(asset_id))
             self.assertEqual(response.status, '200 OK')
@@ -72,7 +69,6 @@ class AssetResourceTest(BaseAssetWebTest):
         with open('docs/source/tutorial/create-second-asset.http', 'w') as self.app.file_obj:
             response = self.app.post_json(request_path, {"data": self.initial_data})
             self.assertEqual(response.status, '201 Created')
-
 
         with open('docs/source/tutorial/pending-second-asset.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/{}?acc_token={}'.format(asset_id, owner_token),
@@ -99,7 +95,6 @@ class AssetResourceTest(BaseAssetWebTest):
         with open('docs/source/tutorial/asset-listing-after-patch.http', 'w') as self.app.file_obj:
             response = self.app.get(request_path)
             self.assertEqual(response.status, '200 OK')
-
 
         with open('docs/source/tutorial/delete-asset.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/{}?acc_token={}'.format(asset_id, owner_token),
@@ -128,11 +123,9 @@ class AssetResourceTest(BaseAssetWebTest):
                                                  "relatedLot": uuid4().hex}})
         self.assertEqual(response.status, '200 OK')
 
-
         response = self.app.patch_json('/{}'.format(asset_id),
                                        {'data': {"status": 'active'}})
         self.assertEqual(response.status, '200 OK')
-
 
         with open('docs/source/tutorial/attached-to-lot-asset-view.http', 'w') as self.app.file_obj:
             response = self.app.get('/{}'.format(asset_id))
