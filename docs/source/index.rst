@@ -9,13 +9,13 @@
     :google-site-verification: kmqHGqhpzgef4t5OVKoQCPa5v-CK14HOLmVrZV2QgmQ
 
 
-Welcome to openregistry.assets.basic's documentation!
-========================================================
+Welcome to openregistry.assets.claimrights` documentation!
+==========================================================
 
 Please report any problems or suggestions for improvement either via the
 `mailing list <http://groups.google.com/group/open-procurement-general>`_ or
 the `issue tracker
-<https://github.com/openprocurement/openregistry.assets.basic/issues>`_.
+<https://github.com/openprocurement/openregistry.assets.claimrights/issues>`_.
 
 Contents:
 
@@ -24,7 +24,7 @@ Contents:
 
    overview
    standard/index
-   assetsWorkflow
+   claimRightsWorkflow
    tutorial
    assets
    authentication
