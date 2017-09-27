@@ -1,0 +1,134 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openregistry.assets.claimrights 0.1.dev0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-26 15:01+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Item"
+msgstr "Item"
+
+msgid "Schema"
+msgstr "Схема"
+
+msgid "id"
+msgstr ""
+
+msgid "string, auto-generated"
+msgstr "рядок, генерується автоматично"
+
+msgid "description"
+msgstr ""
+
+msgid "string, multilingual, required"
+msgstr "рядок, багатомовний, обов'язковий"
+
+msgid "|ocdsDescription| A description of the goods, services to be provided."
+msgstr "|ocdsDescription| Опис товарів та послуг, які повинні бути надані."
+
+msgid "Brief description of the claim right."
+msgstr "Короткий опис права вимоги."
+
+msgid "classification"
+msgstr ""
+
+msgid ":ref:`Classification`"
+msgstr ":ref:`Classification`"
+
+msgid ""
+"|ocdsDescription| The primary classification for the item. See the "
+"`itemClassificationScheme` to identify preferred classification lists, "
+"including CAV and GSIN."
+msgstr ""
+"|ocdsDescription| Початкова класифікація елемента. Дивіться у "
+"itemClassificationScheme, щоб визначити бажані списки класифікації, "
+"включно з CAV та GSIN."
+
+msgid ""
+"It is required for `classification.scheme` to be `CAV`. The "
+"`classification.id` should be valid CAV code."
+msgstr "Класифікація classification.scheme обов’язково повинна "
+"бути CAV. classification.id повинно бути дійсним CAV кодом."
+
+msgid "additionalClassifications"
+msgstr ""
+
+msgid "List of :ref:`Classification` objects"
+msgstr "Список об’єктів :ref:`Classification`"
+
+msgid ""
+"|ocdsDescription| An array of additional classifications for the item. See "
+"the `itemClassificationScheme` codelist for common options to use in OCDS. "
+"This may also be used to present codes from an internal classification "
+"scheme."
+msgstr "|ocdsDescription| Масив додаткових класифікацій для елемента. "
+"Дивіться у список кодів itemClassificationScheme, щоб використати "
+"поширені варіанти в OCDS. Також можна використовувати для представлення "
+"кодів з внутрішньої схеми класифікації."
+
+msgid "unit"
+msgstr ""
+
+msgid ":ref:`Unit`"
+msgstr ":ref:`Unit`"
+
+msgid ""
+"|ocdsDescription| Description of the unit which the good comes in e.g.  "
+"hours, kilograms. Made up of a unit name, and the value of a single unit."
+msgstr "|ocdsDescription| Опис одиниці виміру товару, наприклад, години, "
+"кілограми. Складається з назви одиниці та значення однієї одиниці."
+
+msgid "quantity"
+msgstr ""
+
+msgid "integer"
+msgstr "ціле число"
+
+msgid "|ocdsDescription| The number of units required"
+msgstr "|ocdsDescription| Кількість необхідних одиниць."
+
+msgid "address"
+msgstr ""
+
+msgid ":ref:`Address`"
+msgstr ":ref:`Address`"
+
+msgid "Address of location"
+msgstr "Адреса місцезнаходження права вимоги."
+
+msgid "location"
+msgstr ""
+
+msgid "dictionary"
+msgstr "словник"
+
+msgid ""
+"Geographical coordinates of the location. Element consists of the following "
+"items:"
+msgstr "Географічні координати місця розташування. Складається з таких компонентів:"
+
+msgid "latitude"
+msgstr ""
+
+msgid "string, required"
+msgstr "рядок, обов’язковий"
+
+msgid "longitude"
+msgstr ""
+
+msgid "elevation"
+msgstr ""
+
+msgid "string, optional, usually not used"
+msgstr "рядок, не обов’язково, переважно не використовується"
+
+msgid ""
+"`location` usually takes precedence over `address` if both are present."
+msgstr "Параметр location зазвичай має вищий пріоритет ніж address, якщо "
+"вони обидва вказані."

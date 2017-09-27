@@ -124,3 +124,14 @@ msgstr ""
 "API приймає `JSON <http://json.org/>`_ або form-encoded вміст у запитах. Він"
 " повертає JSON вміст у всіх свої відповідях, включно з помилками. "
 "Підтримується лише UTF-8 кодування і для запитів, і для відповідей."
+
+msgid "openregistry.assets.claimRights contains the description of the Registry Data Base"
+msgstr "openregistry.assets.claimRights містить документацію з описом роботи "
+"з базою даних реєстру активів (RDB)."
+
+msgid "claimRights state for the indebtedness to banks which represent credit obligations."
+msgstr "claimRights представляють права вимог по кредтній заборгованості фізичної/юридичної "
+"особи банку."
+
+msgid "Specific structures which are `items` & `debt` are included."
+msgstr "У структуру claimRights включено об'єкти `items` і `debt`."
