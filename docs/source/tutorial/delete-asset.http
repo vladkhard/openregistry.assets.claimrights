@@ -1,4 +1,4 @@
-PATCH /api/0.1/assets/a994c96b07b54deca896b1fead29c6ba?acc_token=1195acb2b5e74428a48032be515e8ecf HTTP/1.0
+PATCH /api/0.1/assets/6aa3093c0b00447abefcacf9a11da277?acc_token=431a00c918cd47d48d6f37d62f631c37 HTTP/1.0
 Authorization: Basic YnJva2VyOg==
 Content-Length: 31
 Content-Type: application/json
@@ -24,7 +24,7 @@ X-Content-Type-Options: nosniff
       "id": "39513200-3"
     }, 
     "title": "Земля для космодрому", 
-    "assetID": "UA-AR-DGF-2017-09-26-000001", 
+    "assetID": "UA-AR-DGF-2018-01-09-000001", 
     "items": [
       {
         "description": "футляри до державних нагород", 
@@ -47,7 +47,7 @@ X-Content-Type-Options: nosniff
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "e1ae2d2a0d2a4aef844646e0550b1f63", 
+        "id": "d778f751485b4bd79f285fc6e8fa90c1", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -75,7 +75,7 @@ X-Content-Type-Options: nosniff
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "1719393675e14e51a94d20d9558dbab6", 
+        "id": "ada801c8e60b41e3a3164b2ab42aff15", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -88,7 +88,7 @@ X-Content-Type-Options: nosniff
       "amount": 100.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2017-09-26T11:39:12.806743+03:00", 
+    "dateModified": "2018-01-09T18:31:04.355377+02:00", 
     "owner": "broker", 
     "assetCustodian": {
       "contactPoint": {
@@ -116,7 +116,7 @@ X-Content-Type-Options: nosniff
       "region": "м. Київ", 
       "locality": "м. Київ"
     }, 
-    "date": "2017-09-26T11:39:12.806531+03:00", 
+    "date": "2018-01-09T18:31:04.355162+02:00", 
     "debt": {
       "agreementNumber": "42", 
       "debtCurrencyValue": {
@@ -130,7 +130,7 @@ X-Content-Type-Options: nosniff
       }, 
       "debtorType": "legalPerson"
     }, 
-    "id": "a994c96b07b54deca896b1fead29c6ba", 
+    "id": "6aa3093c0b00447abefcacf9a11da277", 
     "unit": {
       "code": "39513200-3", 
       "name": "item"

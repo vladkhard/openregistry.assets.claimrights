@@ -1,14 +1,6 @@
-PATCH /api/0.1/assets/6aa3093c0b00447abefcacf9a11da277?acc_token=431a00c918cd47d48d6f37d62f631c37 HTTP/1.0
-Authorization: Basic YnJva2VyOg==
-Content-Length: 31
-Content-Type: application/json
+GET /api/0.1/assets/68dcee4e1af44aa493c6a040a924c03f HTTP/1.0
+Authorization: Basic Y29uY2llcmdlOg==
 Host: lb.api-sandbox.registry.ea.openprocurement.net
-DATA:
-{
-  "data": {
-    "status": "pending"
-  }
-}
 
 Response: 200 OK
 Content-Type: application/json
@@ -23,7 +15,7 @@ X-Content-Type-Options: nosniff
       "id": "39513200-3"
     }, 
     "title": "Земля для космодрому", 
-    "assetID": "UA-AR-DGF-2018-01-09-000001", 
+    "assetID": "UA-AR-DGF-2018-01-09-000004", 
     "items": [
       {
         "description": "футляри до державних нагород", 
@@ -46,7 +38,7 @@ X-Content-Type-Options: nosniff
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "d778f751485b4bd79f285fc6e8fa90c1", 
+        "id": "35e00aa638364d06a829a616854dca25", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -74,7 +66,7 @@ X-Content-Type-Options: nosniff
           "region": "м. Київ", 
           "locality": "м. Київ"
         }, 
-        "id": "ada801c8e60b41e3a3164b2ab42aff15", 
+        "id": "8fa1341b52a840539d5093471193adaa", 
         "unit": {
           "code": "44617100-9", 
           "name": "item"
@@ -87,7 +79,7 @@ X-Content-Type-Options: nosniff
       "amount": 100.0, 
       "valueAddedTaxIncluded": true
     }, 
-    "dateModified": "2018-01-09T18:31:03.936033+02:00", 
+    "dateModified": "2018-01-09T18:31:05.592916+02:00", 
     "owner": "broker", 
     "assetCustodian": {
       "contactPoint": {
@@ -115,7 +107,7 @@ X-Content-Type-Options: nosniff
       "region": "м. Київ", 
       "locality": "м. Київ"
     }, 
-    "date": "2018-01-09T18:31:03.935835+02:00", 
+    "date": "2018-01-09T18:31:05.592681+02:00", 
     "debt": {
       "agreementNumber": "42", 
       "debtCurrencyValue": {
@@ -129,7 +121,7 @@ X-Content-Type-Options: nosniff
       }, 
       "debtorType": "legalPerson"
     }, 
-    "id": "6aa3093c0b00447abefcacf9a11da277", 
+    "id": "68dcee4e1af44aa493c6a040a924c03f", 
     "unit": {
       "code": "39513200-3", 
       "name": "item"
