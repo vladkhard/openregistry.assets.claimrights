@@ -110,6 +110,19 @@ Let's delete it:
 Integration with lots
 ---------------------
 
+Assume we attached assets to lot:
+
+.. literalinclude:: tutorial/attached-to-lot-asset-view-second.http
+   :language: javascript
+
+Let`s change lot status to `recomposed`.
+
+When bot finds such a lot, it turns status of the assets being attached to that lot to `pending`. 
+
+.. literalinclude:: tutorial/deattached-from-lot-asset-view.http
+   :language: javascript
+
+
 .. literalinclude:: tutorial/attached-to-lot-asset-view.http
    :language: javascript
 
@@ -121,19 +134,4 @@ Integration with lots
 .. literalinclude:: tutorial/complete-asset-view.http
       :language: javascript
 
-
-Concierge operations
---------------------
-
-Assume we attached asset to lot:
-
-.. literalinclude:: tutorial/attached-to-lot-asset-view-second.http
-   :language: javascript
-
-Then we change status of lot to `recomposed`.
-When bot finds that status of a lot is `recomposed`,
-turn status of the assets being attached to that lot to `pending`. Status of the lot itself will become `pending`.
-
-.. literalinclude:: tutorial/deattached-from-lot-asset-view.http
-   :language: javascript
 
