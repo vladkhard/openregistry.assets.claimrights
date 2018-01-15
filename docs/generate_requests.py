@@ -164,3 +164,44 @@ class AssetResourceTest(BaseAssetWebTest):
         with open('docs/source/tutorial/complete-asset-view.http', 'w') as self.app.file_obj:
             response = self.app.get('/{}'.format(asset_id))
             self.assertEqual(response.status, '200 OK')
+
+
+        # Concierge actions with assets of recomposed lot
+
+        self.app.authorization = ('Basic', ('broker', ''))
+
+        response = self.app.post_json(request_path, {"data": self.initial_data})
+        self.assertEqual(response.status, '201 Created')
+
+        asset_id = response.json['data']['id']
+        owner_token = response.json['access']['token']
+
+        response = self.app.patch_json('/{}?acc_token={}'.format(asset_id, owner_token),
+                                       {'data': {"status": 'pending'}})
+        self.assertEqual(response.status, '200 OK')
+
+        # Switch to Active
+        #
+        self.app.authorization = ('Basic', ('concierge', ''))
+
+        response = self.app.patch_json('/{}'.format(asset_id),
+                                       {'data': {"status": 'verification',
+                                                 "relatedLot": uuid4().hex}})
+        self.assertEqual(response.status, '200 OK')
+
+        response = self.app.patch_json('/{}'.format(asset_id),
+                                       {'data': {"status": 'active'}})
+        self.assertEqual(response.status, '200 OK')
+
+        with open('docs/source/tutorial/attached-to-lot-asset-view-second.http', 'w') as self.app.file_obj:
+            response = self.app.get('/{}'.format(asset_id))
+            self.assertEqual(response.status, '200 OK')
+
+        response = self.app.patch_json('/{}'.format(asset_id),
+                                       {'data': {"status": 'pending'}})
+        self.assertEqual(response.status, '200 OK')
+
+
+        with open('docs/source/tutorial/deattached-from-lot-asset-view.http', 'w') as self.app.file_obj:
+            response = self.app.get('/{}'.format(asset_id))
+            self.assertEqual(response.status, '200 OK')
