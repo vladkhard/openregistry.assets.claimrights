@@ -3,10 +3,10 @@ from schematics.types import StringType
 from schematics.types.compound import ListType, ModelType
 from zope.interface import implementer
 
-from openprocurement.api.registry_models.ocds import Item, Debt
+from openprocurement.api.registry_models.ocds import Debt
 
 from openregistry.assets.core.models import (
-    IAsset, Asset as BaseAsset,
+    IAsset, Asset as BaseAsset, Item
 )
 
 
