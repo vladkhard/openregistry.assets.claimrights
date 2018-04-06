@@ -6,7 +6,7 @@ from openregistry.assets.core.constants import DOCUMENT_TYPES
 from openregistry.assets.core.tests.base import test_document_data
 from openregistry.assets.core.tests.blanks.mixins import ResourceDocumentTestMixin
 
-from openregistry.assets.basic.tests.base import (
+from openregistry.assets.claimrights.tests.base import (
     AssetContentWebTest
 )
 
