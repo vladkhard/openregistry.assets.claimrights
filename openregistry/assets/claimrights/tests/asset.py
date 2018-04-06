@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import unittest
 
-from openprocurement.api.tests.base import snitch
-from openprocurement.api.tests.blanks.mixins import ResourceTestMixin
-
 from openregistry.assets.core.tests.blanks.asset import patch_decimal_item_quantity
-from openregistry.assets.core.tests.blanks.mixins import AssetResourceTestMixin
+from openregistry.assets.core.tests.blanks.mixins import (
+    AssetResourceTestMixin,
+    ResourceTestMixin,
+    snitch
+)
 
 from openregistry.assets.claimrights.models import Asset as AssetClaimRights
 from openregistry.assets.claimrights.tests.base import (
