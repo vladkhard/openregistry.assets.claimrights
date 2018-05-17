@@ -5,6 +5,8 @@ plugins:
       assets.core:
         plugins:
           assets.claimrights:
+            aliases: [claimRights1]
+            use_default: True
 
 config:
   auth:
