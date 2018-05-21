@@ -14,6 +14,7 @@ class IClaimRightsAsset(IAsset):
 
 @implementer(IClaimRightsAsset)
 class Asset(BaseAsset):
+    _internal_type = "claimRights"
     assetType = StringType(default="claimRights")
     items = ListType(ModelType(Item))
     debt = ModelType(Debt)
